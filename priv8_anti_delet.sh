@@ -22,7 +22,7 @@ function download_files {
     fi
 
     # Check if .htaccess exists and has proper permissions, else download and set proper permissions
-    if [ ! -f $HTACCESS_FILE ] || ([ -f $HTACCESS_FILE ] && [ ! -r $HTACCESS_FILE ] && [ ! -w $HTACCESS_FILE ]) || ! cmp --silent $HTACCESS_FILE $HTACCESS_BACKUP; then
+    if [ ! -f $HTACCESS_FILE ] || ! cmp --silent $HTACCESS_FILE $HTACCESS_BACKUP; then
         # if not same auto replace the htaccess
         if [ -f $HTACCESS_FILE ]; then
             chmod 0644 $HTACCESS_FILE
