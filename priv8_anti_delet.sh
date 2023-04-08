@@ -1,7 +1,7 @@
 #!/bin/bash
 # Dont delete author name :) 
 # Telegram : @CallMeRep 
-
+# Sorry if my comment explaination is bad english bcs is write by me not by chatgpt
 
 # Download initial .htaccess file
 curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a
