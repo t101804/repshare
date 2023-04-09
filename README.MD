@@ -3,6 +3,8 @@
 ## Summary
 * [BackConnect Bypass](#trick-backconnect-bypass)
 * [Tools](#tools)
+* [ Example List Vulnerability ]
+   * [AWS TAKEOVER S3](https://github.com/t101804/repshare/blob/main/aws_vuln_with_region.txt)
 * [ Default Index CMS ]
    * [Index Joomla](https://github.com/t101804/repshare/blob/main/index_joomla.php)
 * [ Shell Backdoor Bypass/Non ]
