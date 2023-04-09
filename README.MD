@@ -53,5 +53,9 @@ wget https://raw.githubusercontent.com/t101804/repshare/main/priv8_anti_delet.sh
 - [reverse-shell-generator](https://www.revshells.com/)
 - [mass-grab-config-joomla&wp-vhost-symlink](https://github.com/t101804/repshare/blob/main/mass_vghost_config_grab.py)
 - [linux_privilage_check_that_i_use](https://github.com/sleventyeleven/linuxprivchecker)
+```
+wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/linuxprivchecker.py
+python linuxprivchecker.py -w -o linuxprivchecker.log
+```
 
 Credit by revshells.com and @CallMeRep
