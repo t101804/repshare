@@ -58,4 +58,5 @@ wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/li
 python linuxprivchecker.py -w -o linuxprivchecker.log
 ```
 - [auto-add-admin-user-to-wordpress](https://github.com/t101804/repshare/blob/main/wp_add_admin.php)
-Credit by (revshell)[revshells.com] and @CallMeRep and (@haxor1337x)[https://github.com/haxor1337x]
+- 
+Credit by (revshell)[https://revshells.com] and @CallMeRep and (@haxor1337x)[https://github.com/haxor1337x]
