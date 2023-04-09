@@ -1,4 +1,4 @@
-# Cheatsheet Pentesting & Payloads By [@CallMeRep](https://t.me//CallMeRep)
+# Cheatsheet Shells & Payloads & Other By [@CallMeRep](https://t.me//CallMeRep)
 
 ## Summary
 * [BackConnect Bypass](#trick-backconnect-bypass)
